@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto es importante para incluir el padding y el border en el ancho y alto del elemento */
+}
+.header{
+    background-color: #191D32;
+}

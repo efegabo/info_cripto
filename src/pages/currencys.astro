@@ -1,0 +1,75 @@
+---
+import '../styles/global.css'
+import Header from '../components/header.astro';
+const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false");
+const data = await response.json();
+const currency =data;
+
+let i = 0;
+for(let curr in currency){
+	if (i<10) {
+		 console.log(currency[curr].name)
+		 i++
+	}
+ 
+ 
+}
+
+---
+<Header />
+
+<table>
+	<thead>
+		<tr>
+			<th>Image</th>
+			<th>Name</th>
+			<th>Current price</th>
+			<th>Market cap</th>
+			<th>Total volume</th> 
+			<th>Price change_24h</th> 
+			<th>High 24h</th>
+			<th>Low 24h</th>
+			<th>Circulating supply</th>
+			<th>Ath</th>
+			<th>Last updated</th>
+
+		</tr>
+	 </thead>
+    <tbody>
+    	<tr>
+    		{ (()=>{
+    			let i=0;
+    			const rows = []
+    			for(let curr in currency){
+    				if (i<10) {
+    					rows.push(
+    					<>
+    					<tr>
+    					<th><img src={currency[curr].image} alt="" /></th>
+    					<th>{currency[curr].name}</th>
+    					<th>{currency[curr].current_price}</th>
+    					<th>{currency[curr].market_cap}</th>
+    					<th>{currency[curr].total_volume}</th>
+    					<th>{currency[curr].price_change_24h}</th>
+    					<th>{currency[curr].high_24h}</th>
+    					<th>{currency[curr].low_24h}</th>
+    					<th>{currency[curr].circulating_supply}</th>
+    					<th>{currency[curr].ath}</th>
+    					<th>{currency[curr].last_updated}</th>
+    				 
+    					</tr>
+    					</>);
+    					i++
+    					 
+
+    				}  else{
+    					break
+    				}
+    			}
+    			return rows;
+    		})()}
+    			 
+    	 
+    	</tr>
+     </tbody>
+</table>
