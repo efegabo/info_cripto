@@ -3,6 +3,120 @@
     padding: 0;
     box-sizing: border-box; /* Esto es importante para incluir el padding y el border en el ancho y alto del elemento */
 }
+/*header index */
 .header{
-    background-color: #191D32;
+    background-color: #3da35d;
+    display: grid;
+    grid-template-columns:  repeat( 2, 500px);
+    gap: 10px;
+}
+.header img{
+    width: 50em;
+    padding: 30px;
+}
+.currencys{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 25px;
+}
+.curr img{
+    width: 70%;
+    padding: 10px;
+
+}
+.curr:hover{
+    background-color: #453A49;
+     border-radius: 20px;
+
+}
+.header-text{
+    text-align: center;
+    padding-top: 110px;
+    padding-left: 50px;
+    font-size: 20px;
+
+}
+
+/* currencys */
+hr{
+    width: 10%;
+    position: relative;
+    left: 35em;
+    margin: 15px;
+
+}
+
+.numer img{
+    width: 5%;
+    position:absolute;
+    left: 38em;
+    top: 28.5em;
+
+}
+.currencys_body{
+    margin-top: 50px;
+}
+.currencys_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 40px;
+}
+.currencys_cards div{
+    margin: 20px;
+
+}
+.cards{
+    border: 1px solid green;
+    border-radius: 10px;
+}
+ 
+.currencis{
+    text-align: center;
+}
+/*documentation*/
+#documentacion{
+     background-color: #3da35d;
+}
+.numer2 img{
+    width: 5%;
+    position:absolute;
+    left: 38em;
+    top: 63em;
+}
+ 
+ .documentacion_body_title {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    top: 50px;
+
+ }
+
+ .content_document{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     
+     margin-top: 80px;
+     margin-left: 60px;
+
+
+ }
+ .card_docu{
+    padding: 61px;
+ }
+.img_docume img{
+    width: 70%;
+    border-radius: 20px;
+}
+
+.divisor{
+    position: absolute;
+    left: 41em;
+
+     width: 2px; /* Ancho de la línea vertical */
+  height: 64em; /* Altura de la línea vertical */
+  background-color: black; /* Color de la línea */
+  margin: 0 auto; /* Centrar la línea verticalmente */
+
 }
