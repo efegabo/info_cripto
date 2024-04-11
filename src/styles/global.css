@@ -10,6 +10,7 @@
     grid-template-columns:  repeat( 2, 500px);
     gap: 10px;
 }
+ 
 .header img{
     width: 50em;
     padding: 30px;
@@ -118,5 +119,60 @@ hr{
   height: 64em; /* Altura de la línea vertical */
   background-color: black; /* Color de la línea */
   margin: 0 auto; /* Centrar la línea verticalmente */
+
+}
+
+@media(max-width: 440px){
+    .container{
+        width: 108em;
+    }
+    .currencys_cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 40px;
+    }
+    
+    hr{
+        display: none;
+    }
+
+    h1 {
+        font-size:70px;
+        margin: 20px;
+    }
+    h3{
+        font-size:60px;   
+    }
+    .content_document{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin-left: 0px;
+    
+    
+     }
+     .header-img img {
+        width: 100%;
+     }
+     p{
+        font-size: 60px;
+     }
+     h2{
+        font-size: 60px;
+        margin-bottom: 25px;
+     }
+     .header{
+        background-color: #3da35d;
+        display: grid;
+        grid-template-columns:  repeat( 1, 1fr);
+       
+    }
+    .header p {
+        font-size: 70px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+     
 
 }
