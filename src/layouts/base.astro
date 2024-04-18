@@ -1,17 +1,19 @@
 ---
 import Header from '../components/header.astro'
-
+import Footer from '../components/footer.astro'
+ 
 ---
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<title></title>
 </head>
 <body>
 	<Header />
-	<slot />
-	<p>Hola mundosssssssssssssssss</p>
+	 <slot />
+	<Footer />
 </body>
 </html>

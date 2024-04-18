@@ -1,0 +1,16 @@
+@media(max-width: 420px){
+    .footer{
+        text-align: center;
+        width: 103em;
+        margin-top: 50px;
+
+    }
+    .footer_1 i{
+        font-size: 100px;
+        
+    }
+    .footer_2{
+        background-color:lightgreen;
+        margin-top: 20px;
+    }
+}

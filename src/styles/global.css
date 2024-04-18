@@ -122,9 +122,9 @@ hr{
 
 }
 
-@media(max-width: 436px){
+@media(max-width: 420px){
     .container{
-        width: 108em;
+        width: 103em;
     }
     .currencys_cards{
         display: grid;
