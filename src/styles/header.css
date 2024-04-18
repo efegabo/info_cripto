@@ -18,3 +18,9 @@ ul{
  	background-color: #134611;
 
  }
+ @media(max-width: 440px){
+	.navbar{
+		width: 108em;
+   
+	}
+ }
