@@ -4,11 +4,15 @@
     box-sizing: border-box; /* Esto es importante para incluir el padding y el border en el ancho y alto del elemento */
 }
 /*header index */
+.container{
+    font-family: "Space Grotesk", sans-serif;
+}
 .header{
     background-color: #3da35d;
     display: grid;
     grid-template-columns:  repeat( 2, 500px);
     gap: 10px;
+
 }
  
 .header img{
@@ -125,6 +129,7 @@ hr{
 @media(max-width: 420px){
     .container{
         width: 103em;
+        font-family: "Space Grotesk", sans-serif;
     }
     .currencys_cards{
         display: grid;
@@ -155,6 +160,10 @@ hr{
      .header-img img {
         width: 100%;
      }
+     .header-text p {
+         position: relative;
+         right: 24.5px;
+     }
      p{
         font-size: 60px;
      }
@@ -172,6 +181,20 @@ hr{
         font-size: 70px;
         margin-top: 60px;
         margin-bottom: 80px;
+    }
+    .numer img{
+        width: 30%;
+        position: absolute;
+        top: 111.5em;
+        left: 48em;
+
+    }
+    .numer2 img{
+        width: 30%;
+        position: absolute;
+        top: 252em;
+        left: 48em;
+
     }
      
 

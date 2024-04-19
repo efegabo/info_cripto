@@ -7,10 +7,12 @@
     }
     .footer_1 i{
         font-size: 100px;
+        font-family: "Space Grotesk", sans-serif;
         
     }
     .footer_2{
         background-color:lightgreen;
         margin-top: 20px;
+        font-family: "Space Grotesk", sans-serif;
     }
 }
