@@ -1,8 +1,23 @@
+.footer{
+        text-align: center;
+         padding: 10px;
+        background-color: #696773;
+          width: 83.91em;
+
+    }
+    .footer_1{
+        padding-bottom:10px;
+    }
+     .footer_1 i{
+        font-size: 30px;
+        font-family: "Space Grotesk", sans-serif;
+        
+    }
 @media(max-width: 420px){
     .footer{
         text-align: center;
         width: 103em;
-        margin-top: 50px;
+       
 
     }
     .footer_1 i{

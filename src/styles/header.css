@@ -17,20 +17,24 @@ ul{
  .navbar{
  	background-color: #134611;
 	 font-family: "Space Grotesk", sans-serif;
+	 width: 83.91em;
 
  }
  @media(max-width: 420px){
 	.navbar{
-		width: 103em; 
+		 
 		height: 130px;
 		font-family: "Space Grotesk", sans-serif;
+		width: 103em;
 	}
+
+
 	.navbar a{
 		font-size: 50px;
 	}
 	 
 	.logo{
-     padding-right: 26em;
+     padding-right:26em;
 	   
 	 
 	}

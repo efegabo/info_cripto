@@ -1,8 +1,12 @@
 .tabla{
 		text-align: center	;
-	 margin: 20px;
+	    margin: 10px;
+	 width: 83em;
 }
-
+.currencys_cards  {
+    
+	width: 79em;
+}
 
 .img_cur img{
 	width: 	20%;
@@ -21,4 +25,26 @@
  
 tbody{
 	font-size: 	13px;
+}
+@media(max-width:420px){
+
+		.tabla{
+		text-align: center	;
+	  margin: 5px;
+	   width: 103em;
+}
+#doc{
+	display: none;
+}
+.logo{
+	margin-right: 20em;
+}
+.currencys_cards   {
+  text-align: center;
+   position: relative;
+   left: 10em;
+	 
+
+}
+	 
 }

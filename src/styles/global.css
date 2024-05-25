@@ -4,8 +4,11 @@
     box-sizing: border-box; /* Esto es importante para incluir el padding y el border en el ancho y alto del elemento */
 }
 /*header index */
+
 .container{
     font-family: "Space Grotesk", sans-serif;
+  
+     width: 83.91em;
 }
 .header{
     background-color: #3da35d;
@@ -14,6 +17,7 @@
     gap: 10px;
 
 }
+
  
 .header img{
     width: 50em;
@@ -21,7 +25,7 @@
 }
 .currencys{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 25px;
 }
 .curr img{
@@ -50,14 +54,7 @@ hr{
     margin: 15px;
 
 }
-
-.numer img{
-    width: 5%;
-    position:absolute;
-    left: 38em;
-    top: 28.5em;
-
-}
+ 
 .currencys_body{
     margin-top: 50px;
 }
@@ -83,12 +80,7 @@ hr{
 #documentacion{
      background-color: #3da35d;
 }
-.numer2 img{
-    width: 5%;
-    position:absolute;
-    left: 38em;
-    top: 63em;
-}
+
  
  .documentacion_body_title {
     text-align: center;
@@ -126,10 +118,17 @@ hr{
 
 }
 
+
 @media(max-width: 420px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }  
     .container{
-        width: 103em;
+       
         font-family: "Space Grotesk", sans-serif;
+         width: 103em;  
     }
     .currencys_cards{
         display: grid;
@@ -160,6 +159,7 @@ hr{
      .header-img img {
         width: 100%;
      }
+
      .header-text p {
          position: relative;
          right: 24.5px;
@@ -182,20 +182,7 @@ hr{
         margin-top: 60px;
         margin-bottom: 80px;
     }
-    .numer img{
-        width: 30%;
-        position: absolute;
-        top: 111.5em;
-        left: 48em;
-
-    }
-    .numer2 img{
-        width: 30%;
-        position: absolute;
-        top: 252em;
-        left: 48em;
-
-    }
+     
      
 
 }
