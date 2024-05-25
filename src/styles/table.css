@@ -22,6 +22,9 @@
 .tabla tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+#doc{
+	display: none;
+}
  
 tbody{
 	font-size: 	13px;
